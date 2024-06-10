@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+<bean name="emp1" class="com.springcore.collections.Emp">
+	<property name="name" value="Meghana"/>
+	<property name="phones" >
+		<list>
+			<value>8805046057</value>
+			<value>9094484848</value>
+			<null></null>
+		</list>
+	</property>
+	
+	<property name="address">
+		<set>
+			<value>Sangli</value>
+			<value>Pune</value>
+		</set>
+	</property>
+	
+	<property name="courses">
+		<map>
+			<entry key="java" value="2momths"/>
+			<entry key="python" value="1momths"/>						
+		</map>
+	</property>
+	
+	<property name="props">
+		<props>
+			<prop key="name"> Meghana </prop> 
+			<prop key="Roll no">2</prop>						
+		</props>
+	</property>
+	
+</bean>
+ </beans>
